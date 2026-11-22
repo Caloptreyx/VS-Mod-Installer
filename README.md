@@ -34,6 +34,24 @@ Package name: `dev.caloptreyx.vsmodinstaller` · Requires panel `>=1.2.10`
 - **Detection badges** show the detected game version and Mods folder; hover a badge to see where
   the value came from. An alert appears when something can't be detected.
 
+## Screenshots
+
+**Browse**: the ModDB filtered to the detected game version.
+
+![Browse tab with ModDB results](docs/screenshots/browse.png)
+
+**Install Mod modal**: the release picked for the server's game version.
+
+![Install Carry On modal](docs/screenshots/install-modal.png)
+
+**Dependencies**: missing dependencies offered after an install.
+
+![Dependency dialog for Expanded Foods](docs/screenshots/dependencies.png)
+
+**Installed**: the mods in the Mods folder with versions and enable switches.
+
+![Installed mods list](docs/screenshots/installed.png)
+
 ## Installation
 
 Download `dev_caloptreyx_vsmodinstaller.c7s.zip` from the

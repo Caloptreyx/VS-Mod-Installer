@@ -1,0 +1,164 @@
+{
+  "mod": {
+    "modid": 890,
+    "assetid": 4405,
+    "name": "Carry On",
+    "text": "<p>Adds the capability to <strong>carry</strong> various things.</p>\n\n<p><img src=\"/web/img/example.png\" alt=\"Example\"></p>",
+    "author": "NerdScurvy",
+    "urlalias": "carryon",
+    "logofilename": "https://moddbcdn.vintagestory.at/CarryOnLogo_aef8a4cbdf80f8b3851b5dc3b23e1a28.png",
+    "logofile": "https://moddbcdn.vintagestory.at/CarryOnLogo_aef8a4cbdf80f8b3851b5dc3b23e1a28.png",
+    "logofiledb": "https://moddbcdn.vintagestory.at/CarryOnLogo_aef8a4cbdf80f8b3851b5dc3b23e1a28.png",
+    "homepageurl": "",
+    "sourcecodeurl": "https://github.com/NerdScurvy/CarryOn?organization=NerdScurvy",
+    "trailervideourl": "",
+    "issuetrackerurl": "https://github.com/NerdScurvy/CarryOn/issues",
+    "wikiurl": "",
+    "downloads": 1132427,
+    "follows": 8116,
+    "trendingpoints": 0,
+    "comments": 770,
+    "side": "both",
+    "type": "mod",
+    "created": "2022-10-22 01:30:37",
+    "lastreleased": "2026-10-14 14:48:50",
+    "lastmodified": "2026-11-21 23:33:38",
+    "tags": [
+      "Storage",
+      "QoL"
+    ],
+    "releases": [
+      {
+        "releaseid": 61180,
+        "mainfile": "https://moddbcdn.vintagestory.at/CarryOn-1.22.0_v2.0._61efe1fabff7a88a6faaba0f2ddd6430.zip?dl=CarryOn-1.22.0_v2.0.0-rc.1.zip",
+        "filename": "CarryOn-1.22.0_v2.0.0-rc.1.zip",
+        "fileid": 130071,
+        "downloads": 11425,
+        "tags": [
+          "1.22.0",
+          "1.22.1",
+          "1.22.2",
+          "1.22.3",
+          "1.22.4",
+          "1.22.5",
+          "1.22.6",
+          "1.22.7"
+        ],
+        "modidstr": "carryon",
+        "modversion": "2.0.0-rc.1",
+        "created": "2026-10-14 13:43:04",
+        "changelog": "<p>Changes for 2.0.0-rc.1</p>"
+      },
+      {
+        "releaseid": 52086,
+        "mainfile": "https://moddbcdn.vintagestory.at/CarryOn-1.22.0_v1.14_6433d23712caab1513f4189fc39b8b92.zip?dl=CarryOn-1.22.0_v1.14.3.zip",
+        "filename": "CarryOn-1.22.0_v1.14.3.zip",
+        "fileid": 113014,
+        "downloads": 82074,
+        "tags": [
+          "1.22.0",
+          "1.22.1",
+          "1.22.2",
+          "1.22.3",
+          "1.22.4",
+          "1.22.5",
+          "1.22.6",
+          "1.22.7"
+        ],
+        "modidstr": "carryon",
+        "modversion": "1.14.3",
+        "created": "2026-08-07 10:22:05",
+        "changelog": "<p>Changes for 1.14.3</p>"
+      },
+      {
+        "releaseid": 50130,
+        "mainfile": "https://moddbcdn.vintagestory.at/CarryOn-1.22.0_v2.0._d743db358a317c3ed33808df9cb5633b.zip?dl=CarryOn-1.22.0_v2.0.0-pre.8.zip",
+        "filename": "CarryOn-1.22.0_v2.0.0-pre.8.zip",
+        "fileid": 109190,
+        "downloads": 39388,
+        "tags": [
+          "1.22.0",
+          "1.22.1",
+          "1.22.2",
+          "1.22.3",
+          "1.22.4",
+          "1.22.5",
+          "1.22.6"
+        ],
+        "modidstr": "carryon",
+        "modversion": "2.0.0-pre.8",
+        "created": "2026-07-22 09:32:32",
+        "changelog": "<p>Changes for 2.0.0-pre.8</p>"
+      },
+      {
+        "releaseid": 42603,
+        "mainfile": "https://moddbcdn.vintagestory.at/CarryOn-1.22.0_v1.14_48dccd248b8c48ce3be7a57b97001f1d.zip?dl=CarryOn-1.22.0_v1.14.2.zip",
+        "filename": "CarryOn-1.22.0_v1.14.2.zip",
+        "fileid": 94053,
+        "downloads": 98356,
+        "tags": [
+          "1.22.0",
+          "1.22.1",
+          "1.22.2",
+          "1.22.3"
+        ],
+        "modidstr": "carryon",
+        "modversion": "1.14.2",
+        "created": "2026-05-21 09:53:48",
+        "changelog": "<p>Changes for 1.14.2</p>"
+      },
+      {
+        "releaseid": 38450,
+        "mainfile": "https://moddbcdn.vintagestory.at/CarryOn-1.21.0_v1.13_4b2af418ccae4b79e0596837b0acfff1.zip?dl=CarryOn-1.21.0_v1.13.0.zip",
+        "filename": "CarryOn-1.21.0_v1.13.0.zip",
+        "fileid": 85814,
+        "downloads": 5531,
+        "tags": [
+          "1.21.0",
+          "1.21.1-rc.1",
+          "1.21.1-rc.2",
+          "1.21.1",
+          "1.21.2-rc.1",
+          "1.21.2-rc.2",
+          "1.21.2-rc.3",
+          "1.21.2",
+          "1.21.3",
+          "1.21.4",
+          "1.21.5",
+          "1.21.6-rc.1",
+          "1.21.6",
+          "1.21.7"
+        ],
+        "modidstr": "carryon",
+        "modversion": "1.13.0",
+        "created": "2026-04-19 06:18:34",
+        "changelog": "<p>Changes for 1.13.0</p>"
+      },
+      {
+        "releaseid": 8380,
+        "mainfile": "https://moddbcdn.vintagestory.at/CarryOn-1.19_v1.7.4_9455b5706c9ebe605f84df057d0b7fc3.zip?dl=CarryOn-1.19_v1.7.4.zip",
+        "filename": "CarryOn-1.19_v1.7.4.zip",
+        "fileid": 18114,
+        "downloads": 74751,
+        "tags": [
+          "1.19.0",
+          "1.19.1"
+        ],
+        "modidstr": "carryon",
+        "modversion": "1.7.4",
+        "created": "2024-01-26 01:11:19",
+        "changelog": "<p>Changes for 1.7.4</p>"
+      }
+    ],
+    "screenshots": [
+      {
+        "fileid": 8045,
+        "mainfile": "https://moddbcdn.vintagestory.at/CarryOnLogo2_ab523bf0047598a1474614c89fe0fb06.png",
+        "filename": "CarryOnLogo2.png",
+        "thumbnailfilename": "https://moddbcdn.vintagestory.at/CarryOnLogo2_ab523bf0047598a1474614c89fe0fb06_55_60.png",
+        "created": "2022-10-30 03:46:26"
+      }
+    ]
+  },
+  "statuscode": "200"
+}

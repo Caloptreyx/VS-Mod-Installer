@@ -1,0 +1,16 @@
+{
+	"type": "code",
+	"name": "Carry On",
+	"modid": "carryon",
+	"version": "1.8.0",
+	"description": "Adds the capability to carry various things",
+	"website": "https://github.com/copygirl/CarryOn",
+	"authors": [
+		"copygirl",
+		"Xytabich"
+	],
+	"dependencies": {
+		"game": "1.21.0",
+		"vsimgui": "*"
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "statuscode": "200",
+  "updates": {
+    "carryon": {
+      "releaseid": 61180,
+      "mainfile": "https://moddbcdn.vintagestory.at/CarryOn-1.22.0_v2.0._61efe1fabff7a88a6faaba0f2ddd6430.zip?dl=CarryOn-1.22.0_v2.0.0-rc.1.zip",
+      "filename": "CarryOn-1.22.0_v2.0.0-rc.1.zip",
+      "fileid": 130071,
+      "downloads": 11425,
+      "tags": [
+        "1.22.0",
+        "1.22.1",
+        "1.22.2",
+        "1.22.3",
+        "1.22.4",
+        "1.22.5",
+        "1.22.6",
+        "1.22.7"
+      ],
+      "modidstr": "carryon",
+      "modversion": "2.0.0-rc.1",
+      "created": "2026-10-14 13:43:04"
+    }
+  }
+}

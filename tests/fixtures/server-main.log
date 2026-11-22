@@ -1,0 +1,9 @@
+21.11.2026 22:41:07 [Notification] Running on 64 bit Linux 6.12.115 (Unix 6.12.115.0) with 7944 MB RAM
+21.11.2026 22:41:07 [Notification] Game Version: v1.22.7 (Stable)
+21.11.2026 22:41:07 [Notification] Server logger started.
+21.11.2026 22:41:07 [Notification] C# Framework: .net 10.0.0
+21.11.2026 22:41:07 [Event] Launching server...
+21.11.2026 22:41:08 [Notification] Will search the following paths for mods:
+21.11.2026 22:41:08 [Notification]     /home/container/Mods
+21.11.2026 22:41:08 [Notification]     /home/container/data/Mods
+21.11.2026 22:41:08 [Notification] Found 3 mods (0 disabled)

@@ -1,0 +1,168 @@
+{
+  "statuscode": "200",
+  "mods": [
+    {
+      "modid": 13688,
+      "assetid": 81097,
+      "downloads": 0,
+      "follows": 0,
+      "trendingpoints": 0,
+      "comments": 0,
+      "name": "MeadowServerRAC",
+      "summary": "STUFF",
+      "modidstrs": [
+        "meadowsserverracesandclasses"
+      ],
+      "author": "MeadowTealeaf",
+      "urlalias": null,
+      "side": "both",
+      "type": "mod",
+      "logo": null,
+      "tags": [
+        ""
+      ],
+      "lastreleased": "2026-11-21 23:07:23"
+    },
+    {
+      "modid": 792,
+      "assetid": 3829,
+      "downloads": 1244366,
+      "follows": 8655,
+      "trendingpoints": 1,
+      "comments": 1541,
+      "name": "BetterRuins",
+      "summary": "Adds many new ruins over and underground to your survival game world.",
+      "modidstrs": [
+        "betterruins"
+      ],
+      "author": "NiclAss",
+      "urlalias": "betterruins",
+      "side": "both",
+      "type": "mod",
+      "logo": "https://moddbcdn.vintagestory.at/BetterRuinsmoddbicon_021a6a8838be7058c2ab618ce0097224_480_320.png",
+      "tags": [
+        "Crafting",
+        "Exploration",
+        "Lore",
+        "Story",
+        "Structures",
+        "Travel & Exploration",
+        "Worldgen"
+      ],
+      "lastreleased": "2026-11-21 14:36:09"
+    },
+    {
+      "modid": 13685,
+      "assetid": 81066,
+      "downloads": 1,
+      "follows": 0,
+      "trendingpoints": 0,
+      "comments": 0,
+      "name": "Full Block Road",
+      "summary": "Client-side: the stone road gets a full-block collision box",
+      "modidstrs": [],
+      "author": "hommie",
+      "urlalias": null,
+      "side": "client",
+      "type": "other",
+      "logo": "https://moddbcdn.vintagestory.at/modicon_df14951aeae6bea6e9aac11a324a601d_480_320.png",
+      "tags": [
+        "Clientside",
+        "QoL"
+      ],
+      "lastreleased": "2026-11-21 21:15:21"
+    },
+    {
+      "modid": 13528,
+      "assetid": 79985,
+      "downloads": 99,
+      "follows": 34,
+      "trendingpoints": 0,
+      "comments": 1,
+      "name": "Cave Cartographer",
+      "summary": "Maps caves as you walk them. 2D and 3D maps, waypoints, a way back out and danger ratings.",
+      "modidstrs": [],
+      "author": "Overlordishere",
+      "urlalias": null,
+      "side": "both",
+      "type": "externaltool",
+      "logo": "https://moddbcdn.vintagestory.at/modpage_card_480x320_e3e1c150bfbbac46953b4cb030df9092.png",
+      "tags": [
+        "Addon",
+        "QoL"
+      ],
+      "lastreleased": "2026-11-16 17:41:50"
+    },
+    {
+      "modid": 13548,
+      "assetid": 80111,
+      "downloads": 50,
+      "follows": 4,
+      "trendingpoints": 0,
+      "comments": 0,
+      "name": "Industrial Story - Fixes",
+      "summary": "A patch that fixes two minor but annoying issues in the Industrial Story",
+      "modidstrs": [
+        "industrialstoryfixes",
+        "zindustrialstoryfixes"
+      ],
+      "author": "Anomaly_Cat",
+      "urlalias": null,
+      "side": "both",
+      "type": "mod",
+      "logo": "https://moddbcdn.vintagestory.at/modicon_0a31746bf1bd1d614e6d74303d2f5787.png",
+      "tags": [
+        "Fix",
+        "Immersion",
+        "Metal"
+      ],
+      "lastreleased": "2026-11-18 15:00:12"
+    },
+    {
+      "modid": 890,
+      "assetid": 4405,
+      "downloads": 1132411,
+      "follows": 8116,
+      "trendingpoints": 0,
+      "comments": 770,
+      "name": "Carry On",
+      "summary": "Adds the capability to carry various things. Replaces CarryCapacity.",
+      "modidstrs": [
+        "carryon"
+      ],
+      "author": "NerdScurvy",
+      "urlalias": "carryon",
+      "side": "both",
+      "type": "mod",
+      "logo": "https://moddbcdn.vintagestory.at/CarryOnLogo_aef8a4cbdf80f8b3851b5dc3b23e1a28.png",
+      "tags": [
+        "QoL",
+        "Storage"
+      ],
+      "lastreleased": "2026-10-14 14:48:50"
+    },
+    {
+      "modid": 13679,
+      "assetid": 81021,
+      "downloads": 2,
+      "follows": 0,
+      "trendingpoints": 0,
+      "comments": 0,
+      "name": "No Tree Houses",
+      "summary": "Prevents the trader tree house structures from spawning.",
+      "modidstrs": [
+        "notreehouses"
+      ],
+      "author": "Droseran",
+      "urlalias": "notreehouses",
+      "side": "server",
+      "type": "mod",
+      "logo": null,
+      "tags": [
+        "Structures",
+        "Traders"
+      ],
+      "lastreleased": "2026-11-21 16:57:44"
+    }
+  ]
+}

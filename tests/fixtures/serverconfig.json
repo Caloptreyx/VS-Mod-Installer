@@ -1,0 +1,36 @@
+{
+  "FileEditWarning": "PLEASE NOTE: This file is also loaded when you start a single player world. If you want to run a dedicated server without affecting single player, we recommend you install the game into a different folder and run the server from there.",
+  "ConfigVersion": "1.10",
+  "ServerName": "Vintage Story Server",
+  "ServerUrl": null,
+  "ServerDescription": null,
+  "WelcomeMessage": "Welcome {0}, may you survive well and prosper",
+  "Ip": null,
+  "Port": 42420,
+  "Upnp": false,
+  "AdvertiseServer": false,
+  "MaxClients": 16,
+  "ModDbUrl": "https://mods.vintagestory.at/",
+  "Password": null,
+  "ServerLanguage": "en",
+  "ModPaths": [
+    "Mods",
+    "/home/container/data/Mods"
+  ],
+  "WorldConfig": {
+    "Seed": null,
+    "SaveFileLocation": "/home/container/data/Saves/default.vcdbs",
+    "WorldName": "A new world",
+    "AllowCreativeMode": true,
+    "PlayStyle": "surviveandbuild",
+    "WorldType": "standard",
+    "WorldConfiguration": null,
+    "MapSizeY": null,
+    "CreatedByPlayerName": null,
+    "DisabledMods": null,
+    "RepairMode": false
+  },
+  "ModIdBlackList": null,
+  "ModIdWhiteList": null,
+  "WhitelistMode": 0
+}

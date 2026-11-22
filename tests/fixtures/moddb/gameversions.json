@@ -1,0 +1,65 @@
+{
+  "statuscode": "200",
+  "gameversions": [
+    {
+      "tagid": -281569466040328,
+      "name": "1.22.0-rc.8",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466040329,
+      "name": "1.22.0-rc.9",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466040330,
+      "name": "1.22.0-rc.10",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466056703,
+      "name": "1.22.0",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466122239,
+      "name": "1.22.1",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466187775,
+      "name": "1.22.2",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466253311,
+      "name": "1.22.3",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466318847,
+      "name": "1.22.4",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466384383,
+      "name": "1.22.5",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466449919,
+      "name": "1.22.6",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281569466515455,
+      "name": "1.22.7",
+      "color": "#CCCCCC"
+    },
+    {
+      "tagid": -281573760991233,
+      "name": "1.23.0-pre.1",
+      "color": "#CCCCCC"
+    }
+  ]
+}

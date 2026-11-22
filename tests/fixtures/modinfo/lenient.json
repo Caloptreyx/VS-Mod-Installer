@@ -1,0 +1,15 @@
+﻿// Vintage Story reads this file with Newtonsoft.Json, which allows comments,
+// property names in any case and trailing commas.
+{
+  "Type": "Content",
+  ModID: 'betterruins',
+  "NAME": "BetterRuins",
+  /* the server generates the structures */
+  "Side": "Server",
+  "Authors": ["NiclAss",],
+  "Version": "0.6.5",
+  "Dependencies": {
+    "game": "1.22.0",
+    "BetterRuinsLib": "1.0.2",
+  },
+}

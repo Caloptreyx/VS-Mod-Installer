@@ -89,6 +89,8 @@ const translations = defineTranslations({
             enabled: '{mod} enabled. Restart the server to apply the change.',
             disabled: '{mod} disabled. Restart the server to apply the change.',
             deleted: '{mod} deleted. Restart the server to apply the change.',
+            oldFileKept:
+              '{mod} {version} installed, but the old file {file} could not be removed: {error}. Vintage Story only loads the highest version of a mod, so delete the other file.',
             dependenciesInstalled: 'Dependencies installed: {count}. Restart the server to load them.',
           },
           browse: {
@@ -157,6 +159,8 @@ const translations = defineTranslations({
               delete: {
                 title: 'Delete Mod',
                 content: 'Are you sure you want to delete **{mod}**? The file `{file}` will be moved to the trash.',
+                contentPermanent:
+                  'Are you sure you want to delete **{mod}**? The file `{file}` will be deleted permanently.',
               },
             },
           },

@@ -10,6 +10,23 @@ import { disabledName, enabledName, installedName, modsRoot, parentAndName } fro
  * permissions, subuser ignore rules and the server activity log apply as for any file change.
  */
 
+/**
+ * An update or version change downloaded the new file but couldn't remove the old one, so both
+ * versions are in the mods folder now. `reason` is the error of the panel's delete endpoint.
+ */
+export class OldFileKeptError extends Error {
+  readonly installedFile: string;
+  readonly oldFile: string;
+  readonly reason: unknown;
+
+  constructor(installedFile: string, oldFile: string, reason: unknown) {
+    super(`${installedFile} was installed, but ${oldFile} could not be removed`);
+    this.installedFile = installedFile;
+    this.oldFile = oldFile;
+    this.reason = reason;
+  }
+}
+
 async function ensureModsDir(serverUuid: string, environment: ServerEnvironment): Promise<void> {
   if (environment.modsDirExists) return;
   const [parent, name] = parentAndName(environment.modsDir);
@@ -22,7 +39,7 @@ async function ensureModsDir(serverUuid: string, environment: ServerEnvironment)
  * from the ModDB's CDN itself; the request returns once the file is written. When `replacing` is
  * given (an update or a version change), the new file keeps the old file's enabled state and the
  * old file is removed only after the download finished, so a failed download never leaves the
- * server without the mod.
+ * server without the mod. A failed removal throws `OldFileKeptError`.
  */
 export async function installRelease(
   serverUuid: string,
@@ -42,7 +59,11 @@ export async function installRelease(
   });
 
   if (replacing && replacing.fileName !== target) {
-    await deleteFiles(serverUuid, modsRoot(environment.modsDir), [replacing.fileName]);
+    try {
+      await deleteFiles(serverUuid, modsRoot(environment.modsDir), [replacing.fileName]);
+    } catch (error) {
+      throw new OldFileKeptError(target, replacing.fileName, error);
+    }
   }
 
   return target;

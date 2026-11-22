@@ -23,7 +23,7 @@ import { getDependencies } from '../api.ts';
 import { useInstalledMods } from '../hooks/useInstalledMods.ts';
 import { useModEnvironment } from '../hooks/useModEnvironment.ts';
 import { modInstallerQueryKey } from '../lib/constants.ts';
-import { installRelease } from '../lib/modActions.ts';
+import { installRelease, OldFileKeptError } from '../lib/modActions.ts';
 import { useExtTranslations } from '../translations.ts';
 import { CompatibilityBadge } from './ModBadges.tsx';
 
@@ -102,7 +102,20 @@ export default function DependenciesPanel({
       for (const dependency of shown) {
         if (!selected.has(dependency.modid) || !dependency.release) continue;
         const replacing = dependency.state === 'outdated' ? (byModId.get(dependency.modid) ?? null) : null;
-        await installRelease(serverUuid, environment, dependency.release, replacing);
+        try {
+          await installRelease(serverUuid, environment, dependency.release, replacing);
+        } catch (error) {
+          if (!(error instanceof OldFileKeptError)) throw error;
+          addToast(
+            tExt('pages.server.vsMods.toast.oldFileKept', {
+              mod: dependency.moddb?.name ?? dependency.modid,
+              version: dependency.release.modVersion,
+              file: error.oldFile,
+              error: httpErrorToHuman(error.reason),
+            }),
+            'warning',
+          );
+        }
         installed++;
       }
       addToast(tExt('pages.server.vsMods.toast.dependenciesInstalled', { count: installed }), 'success');

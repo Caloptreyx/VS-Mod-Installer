@@ -26,7 +26,8 @@ Package name: `dev.caloptreyx.vsmodinstaller` · Requires panel `>=1.2.10`
 - **Manage installed mods**: every `.zip`, `.dll`, `.cs` and folder mod in the Mods folder, named by
   its `modinfo.json` (mod id, version, name, authors, side, dependencies) and matched to the ModDB by
   mod id. Shows **update available** for the release that fits the game version; update replaces
-  the old file only after the new one has downloaded.
+  the old file only after the new one has downloaded, and warns with the file name if the old file
+  can't be removed (the new one stays installed).
 - **Enable or disable** a mod with one switch. Disabled mods are renamed to `<file>.disabled`;
   Vintage Story only loads `.zip`, `.dll` and `.cs` files (checked in its `ModLoader`), so it skips
   them. Updates keep the old file's enabled state. Folder mods can't be disabled this way.

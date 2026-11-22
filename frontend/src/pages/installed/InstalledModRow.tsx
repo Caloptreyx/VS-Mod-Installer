@@ -116,7 +116,12 @@ export default function InstalledModRow({
         confirm={tExt('pages.server.vsMods.button.delete', {})}
         onConfirmed={doDelete}
       >
-        {tExt('pages.server.vsMods.installed.modal.delete.content', { mod: name, file: mod.fileName }).md()}
+        {tExt(
+          server.trash.retention !== null
+            ? 'pages.server.vsMods.installed.modal.delete.content'
+            : 'pages.server.vsMods.installed.modal.delete.contentPermanent',
+          { mod: name, file: mod.fileName },
+        ).md()}
       </ConfirmationModal>
 
       <ContextMenu

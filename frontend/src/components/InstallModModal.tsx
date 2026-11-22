@@ -23,7 +23,7 @@ import type { InstalledMod, ModSide, Release } from '../lib/schemas.ts';
 import { getModDetail } from '../api.ts';
 import { useModEnvironment } from '../hooks/useModEnvironment.ts';
 import { modInstallerQueryKey } from '../lib/constants.ts';
-import { installRelease } from '../lib/modActions.ts';
+import { installRelease, OldFileKeptError } from '../lib/modActions.ts';
 import { useExtTranslations } from '../translations.ts';
 import DependenciesPanel from './DependenciesPanel.tsx';
 import { ChannelBadge, CompatibilityBadge } from './ModBadges.tsx';
@@ -137,21 +137,37 @@ function InstallForm({
     if (!selected) return;
 
     setSubmitting(true);
+    const values = { mod: mod.name, version: selected.modVersion };
     installRelease(serverUuid, environment, selected, installed)
       .then((fileName) => {
-        const values = { mod: mod.name, version: selected.modVersion };
         addToast(
           installed
             ? tExt('pages.server.vsMods.toast.changed', values)
             : tExt('pages.server.vsMods.toast.installed', values),
           'success',
         );
-        queryClient.invalidateQueries({ queryKey: modInstallerQueryKey('mods', serverUuid) });
-        queryClient.invalidateQueries({ queryKey: modInstallerQueryKey('environment', serverUuid) });
         onInstalled(fileName);
       })
-      .catch((error) => addToast(httpErrorToHuman(error), 'error'))
-      .finally(() => setSubmitting(false));
+      .catch((error) => {
+        if (!(error instanceof OldFileKeptError)) {
+          addToast(httpErrorToHuman(error), 'error');
+          return;
+        }
+        addToast(
+          tExt('pages.server.vsMods.toast.oldFileKept', {
+            ...values,
+            file: error.oldFile,
+            error: httpErrorToHuman(error.reason),
+          }),
+          'warning',
+        );
+        onInstalled(error.installedFile);
+      })
+      .finally(() => {
+        setSubmitting(false);
+        queryClient.invalidateQueries({ queryKey: modInstallerQueryKey('mods', serverUuid) });
+        queryClient.invalidateQueries({ queryKey: modInstallerQueryKey('environment', serverUuid) });
+      });
   };
 
   return (

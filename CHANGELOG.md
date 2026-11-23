@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Works with panel 1.2.11
+
 ## 0.1.0
 
 - First version: a **VS Mods** page for Vintage Story servers to browse, install, update, enable,

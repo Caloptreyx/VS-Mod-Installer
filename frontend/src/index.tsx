@@ -12,7 +12,7 @@ const PERMISSION = 'files.read';
 
 class CaloptreyxVsModInstallerExtension extends Extension {
   public cardConfigurationPage: React.FC | null = AdminConfigurationPage;
-  public cardIcon: React.ReactNode = <FontAwesomeIcon icon={faCubes} />;
+  public cardIcon = <FontAwesomeIcon icon={faCubes} />;
 
   public initialize(ctx: ExtensionContext): void {
     ctx.extensionRegistry.enterRoutes((routes) =>
